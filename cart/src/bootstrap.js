@@ -5,7 +5,7 @@ const mount = (el) => {
   el.innerHTML = cartText;
 };
 
-if (process.env.NODE_ENV === "developement") {
+if (process.env.NODE_ENV === "development") {
   const el = document.querySelector("#cart-dev");
   if (el) {
     mount(el);
@@ -13,3 +13,4 @@ if (process.env.NODE_ENV === "developement") {
 }
 
 export { mount };
+
